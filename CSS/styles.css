@@ -116,9 +116,22 @@ a {
 /* Hero */
 
 .hero {
-	background-color: var(--secondary-text-color);
 	padding-top: 192px;
 	padding-bottom: 192px;
+	max-width: 1440px;
+	min-height: 603px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(
+	to right,
+	#2e2f42b3,
+    #2e2f42b3
+	),
+	url(/images/people-office\ 1.jpg); 
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: var(--secondary-text-color);
 }
 
 .hero-title {
@@ -179,9 +192,34 @@ a {
 .features-item {
 	width: 264px;
 }
+
 .features-item:not(:last-child) {
 	margin-right: 24px;
 }
+
+.features-item::before{
+	content: "";
+	display: block;
+	height: 112px;
+	background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var(--secondary-background-color);
+	border-radius: 4px;
+	margin-bottom: 8px;
+	}
+
+.icon-antenna::before {
+	background-image: url(/images/antenna\ 1.svg);
+}
+
+.icon-clock::before{
+	background-image: url(/images/group.svg);
+}
+
+.icon-diagram::before{}
+
+.icon-astronaut::before{}
 
 .features-title,
 .employees-name {
