@@ -313,10 +313,11 @@ a {
 
 .employeer-icon-item {
 	display: flex;
-	justify-content: space-between;
-	margin-top: 8px;
-	margin-right: 16px;
-	margin-left: 16px;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 0px;
+gap: 24px;
 }
 
 .button-employees {
