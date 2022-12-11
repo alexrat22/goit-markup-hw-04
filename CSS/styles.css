@@ -40,6 +40,12 @@ a {
 	text-decoration: none;
 }
 
+button{
+	display: block;
+	cursor: pointer;
+	border: none;
+}
+
 .section {
 	padding-top: 120px;
 	padding-bottom: 120px;
@@ -118,7 +124,7 @@ a {
 .hero {
 	padding-top: 192px;
 	padding-bottom: 192px;
-	max-width: 1440px;
+	max-width: 1600px;
 	min-height: 603px;
 	margin-left: auto;
 	margin-right: auto;
@@ -191,32 +197,6 @@ a {
 .features-item:not(:last-child) {
 	margin-right: 24px;
 }
-
-/* .features-item::before {
-	content: "";
-	display: block;
-	height: 112px;
-	background-size: 64px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: var(--secondary-background-color);
-	border-radius: 4px;
-	margin-bottom: 8px;
-}
-
-.icon-antenna::before {
-	background-image: url(/images/symbol-defs.svg#icon-antenna);
-}
-
-.icon-clock::before {
-	background-image: url(/images/group.svg);
-}
-
-.icon-diagram::before {
-}
-
-.icon-astronaut::before {
-} */
 
 .button-features {
 	width: 264px;
@@ -313,27 +293,58 @@ a {
 
 .employeer-icon-item {
 	display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 4px 0px;
-gap: 24px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	/* padding: 4px 0px; */
+	gap: 24px;
+	margin-top: 8px;
+	}
+
+.icon-employees-link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+	border-color: black;
+	background-color: #4d5ae5;
 }
 
-.button-employees {
-	width: 40px;
-	height: 40px;
-	background-color: var(--accent-color);
-	border: none;
-	border-radius: 50%;
+/* Customers */
+
+.customers-title{
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.31;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #2E2F42;
+	margin-bottom: 72px;
 }
 
-.icon-employees {
-	width: 16px;
-	height: 16px;
-	drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.customers-list{
+	display: flex;
+	gap: 24px;
 }
 
+.logo-company-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--helper-text);
+	fill: var(--helper-text);
+	border-radius: 3px;
+}
+
+.logo-company-box:hover{
+	fill: var(--accent-color);
+	border-color: var(--accent-color);
+	}
+
+	
 /* Footer */
 
 .footer {
