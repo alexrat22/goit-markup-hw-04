@@ -6,6 +6,7 @@
 	--background-color: #ffffff;
 	--secondary-background-color: #f4f4fd;
 	--accent-color: #4d5ae5;
+	--hover-color: #31d0aa;
 }
 
 body {
@@ -308,20 +309,19 @@ button{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-	border-color: black;
 	background-color: #4d5ae5;
+	fill: var(--secondary-background-color);
 }
 
 /* Customers */
 
 .customers-title{
-	font-family: 'Roboto';
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.31;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: #2E2F42;
+	color: var(--secondary-text-color);
 	margin-bottom: 72px;
 }
 
@@ -339,7 +339,9 @@ button{
 	border-radius: 3px;
 }
 
-.logo-company-box:hover{
+.logo-company-box:hover,
+.logo-company-box:focus
+{
 	fill: var(--accent-color);
 	border-color: var(--accent-color);
 	}
@@ -351,6 +353,10 @@ button{
 	background-color: var(--secondary-text-color);
 	padding-top: 100px;
 	padding-bottom: 100px;
+}
+
+.footer-main{
+	display: flex;
 }
 
 .logo-footer {
@@ -366,6 +372,49 @@ button{
 	color: var(--footer-text);
 	width: 264px;
 	margin-top: 16px;
+}
+
+.social{
+	margin-left: 128px;
+}
+
+.footer-social-title{
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--background-color)
+}
+
+.footer-social-list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	margin-top: 16px;
+	}
+
+.icon-footer-item{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	width: 40px;
+	height:40px;
+	border-radius: 50%;
+	background-color: var(--main-text-color)
+	
+}
+
+
+.icon-footer-item:hover{
+	background-color: var(--hover-color);
+}
+
+.icon-footer-link{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	fill: var(--background-color)
 }
 
 /* Page "Portfolio" */
