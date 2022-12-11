@@ -297,7 +297,7 @@ button{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	/* padding: 4px 0px; */
+	padding: 4px 0px;
 	gap: 24px;
 	margin-top: 8px;
 	}
@@ -412,8 +412,6 @@ button{
 
 .icon-footer-link{
 	display: flex;
-	justify-content:center;
-	align-items:center;
 	fill: var(--background-color)
 }
 
