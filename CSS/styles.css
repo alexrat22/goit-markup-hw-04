@@ -294,10 +294,8 @@ button{
 
 .employeer-icon-item {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 4px 0px;
 	gap: 24px;
 	margin-top: 8px;
 	}
