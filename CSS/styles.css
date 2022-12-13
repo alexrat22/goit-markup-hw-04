@@ -41,7 +41,7 @@ a {
 	text-decoration: none;
 }
 
-button{
+button {
 	display: block;
 	cursor: pointer;
 	border: none;
@@ -125,11 +125,11 @@ button{
 .hero {
 	padding-top: 192px;
 	padding-bottom: 192px;
-	max-width: 1600px;
+	max-width: 1440px;
 	min-height: 603px;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(/images/people-office\ 1.jpg);
+	background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/people-office\ 1.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -199,11 +199,12 @@ button{
 	margin-right: 24px;
 }
 
-.button-features {
-	width: 264px;
+.image-features {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 112px;
 	background-color: var(--secondary-background-color);
-	border: none;
 	border-radius: 4px;
 	margin-bottom: 8px;
 }
@@ -298,22 +299,22 @@ button{
 	align-items: center;
 	gap: 24px;
 	margin-top: 8px;
-	}
+}
 
-.icon-employees-link{
+.icon-employees-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    width: 40px;
+	width: 40px;
 	height: 40px;
-    border-radius: 50%;
+	border-radius: 50%;
 	background-color: #4d5ae5;
 	fill: var(--secondary-background-color);
 }
 
 /* Customers */
 
-.customers-title{
+.customers-title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.31;
@@ -323,30 +324,31 @@ button{
 	margin-bottom: 72px;
 }
 
-.customers-list{
+.customers-list {
 	display: flex;
 	gap: 24px;
 }
 
-.logo-company-box{
+.logo-company {
+	fill: currentColor;
+}
+
+.logo-company-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	outline: 1px solid var(--helper-text);
-	fill: var(--helper-text);
+	outline: 1px solid currentColor;
+	color: var(--helper-text);
 	border-radius: 3px;
 	width: 168px;
 	height: 88px;
 }
 
 .logo-company-box:hover,
-.logo-company-box:focus
-{
-	fill: var(--accent-color);
-	outline-color: var(--accent-color);
-	}
+.logo-company-box:focus {
+	color: var(--accent-color);
+}
 
-	
 /* Footer */
 
 .footer {
@@ -355,8 +357,9 @@ button{
 	padding-bottom: 100px;
 }
 
-.footer-main{
+.footer-main {
 	display: flex;
+	align-items: baseline;
 }
 
 .logo-footer {
@@ -374,44 +377,37 @@ button{
 	margin-top: 16px;
 }
 
-.social{
+.social {
 	margin-left: 128px;
 }
 
-.footer-social-title{
+.footer-social-title {
 	font-weight: 600;
-	font-size: 16px;
 	line-height: 1.5;
-	letter-spacing: 0.02em;
-	color: var(--background-color)
+	color: var(--background-color);
 }
 
-.footer-social-list{
+.footer-social-list {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 16px;
 	margin-top: 16px;
-	}
-
-.icon-footer-item{
-	display: flex;
-	justify-content:center;
-	align-items:center;
-	width: 40px;
-	height:40px;
-	border-radius: 50%;
-	background-color: var(--main-text-color)
-	
 }
 
-
-.icon-footer-item:hover{
+.icon-footer-link:hover,
+.icon-footer-link:focus {
 	background-color: var(--hover-color);
 }
 
-.icon-footer-link{
+.icon-footer-link {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--main-text-color);
 	fill: var(--secondary-background-color);
 }
 
@@ -446,7 +442,7 @@ button{
 	color: var(--background-color);
 	background-color: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-color: var(--accent-color);
+	border-color: var(--accent-color);
 }
 
 .portfolio-list {
@@ -456,7 +452,9 @@ button{
 	column-gap: 24px;
 }
 
-.portfolio-item:hover {
+.portfolio-link:hover,
+.portfolio-link:focus {
+	display: block;
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
