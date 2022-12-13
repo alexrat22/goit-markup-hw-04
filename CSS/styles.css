@@ -129,7 +129,7 @@ button {
 	min-height: 603px;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(./images/people-office\ 1.jpg);
+	background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/people-office\ 1.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
